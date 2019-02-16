@@ -26,11 +26,11 @@ if __name__ == "__main__":
     landmarks_model_path = unpack_bz2(get_file('shape_predictor_68_face_landmarks.dat.bz2',
                                                LANDMARKS_MODEL_URL, cache_subdir='temp'))
 
-    if len(sys.argv)>0:
+    if len(sys.argv)>1:
         RAW_IMAGES_DIR = sys.argv[1]
     else:
         RAW_IMAGES_DIR = '../upload'
-    if len(sys.argv) > 1:
+    if len(sys.argv) > 2:
         ALIGNED_IMAGES_DIR = sys.argv[2]
     else:
         ALIGNED_IMAGES_DIR = 'face'

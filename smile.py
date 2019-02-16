@@ -11,11 +11,11 @@ import sys
 
 if __name__ == "__main__":
 
-    if len(sys.argv)>0:
+    if len(sys.argv)>1:
         ENC_DIR = sys.argv[1]
     else:
         ENC_DIR = 'enc'
-    if len(sys.argv) > 1:
+    if len(sys.argv) > 2:
         OUTPUT_DIR = sys.argv[2]
     else:
         OUTPUT_DIR = '../output'
