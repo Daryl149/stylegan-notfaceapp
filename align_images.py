@@ -29,7 +29,7 @@ if __name__ == "__main__":
     if len(sys.argv)>1:
         RAW_IMAGES_DIR = sys.argv[1]
     else:
-        RAW_IMAGES_DIR = '../upload'
+        RAW_IMAGES_DIR = os.path.join('..', 'upload')
     if len(sys.argv) > 2:
         ALIGNED_IMAGES_DIR = sys.argv[2]
     else:

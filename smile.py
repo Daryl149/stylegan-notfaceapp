@@ -18,7 +18,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 2:
         OUTPUT_DIR = sys.argv[2]
     else:
-        OUTPUT_DIR = '../output'
+        OUTPUT_DIR = os.path.join('..', 'output')
 
     shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
