@@ -17,7 +17,6 @@ def create_variable_for_generator(name, batch_size):
 
 class Generator:
     def __init__(self, model, batch_size, randomize_noise=False):
-        tf.reset_default_graph()
         self.batch_size = batch_size
 
         self.initial_dlatents = np.zeros((self.batch_size, 18, 512))
