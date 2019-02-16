@@ -57,10 +57,10 @@ if __name__ == "__main__":
                 gen[coeff] = generate_image(new_latent_vector)
             video.write(gen[coeff][..., ::-1])
         video.release()
+        print('finished '+vid_name)
 
-
-        smile_direction = np.load('ffhq_dataset/latent_directions/smile.npy')
-        coeffs = np.concatenate([np.arange(0, 2, .02), np.arange(2, -2, -.02), np.arange(-2, 0, .02)])
-        for file in os.listdir(ENC_DIR):
-            img = np.load(os.path.join(ENC_DIR, file))
-            move_and_show(img, smile_direction, coeffs, file)
+    smile_direction = np.load('ffhq_dataset/latent_directions/smile.npy')
+    coeffs = np.concatenate([np.arange(0, 2, .02), np.arange(2, -2, -.02), np.arange(-2, 0, .02)])
+    for file in os.listdir(ENC_DIR):
+        img = np.load(os.path.join(ENC_DIR, file))
+        move_and_show(img, smile_direction, coeffs, file)
