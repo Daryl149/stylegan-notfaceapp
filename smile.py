@@ -11,8 +11,14 @@ import sys
 
 if __name__ == "__main__":
 
-    ENC_DIR = sys.argv[1] or 'enc'
-    OUTPUT_DIR = sys.argv[2] or '../output'
+    if len(sys.argv)>0:
+        ENC_DIR = sys.argv[1]
+    else:
+        ENC_DIR = 'enc'
+    if len(sys.argv) > 1:
+        OUTPUT_DIR = sys.argv[2]
+    else:
+        OUTPUT_DIR = '../output'
 
     shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
     os.makedirs(OUTPUT_DIR, exist_ok=True)

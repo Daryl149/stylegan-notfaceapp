@@ -4,6 +4,7 @@ import bz2
 from keras.utils import get_file
 from ffhq_dataset.face_alignment import image_align
 from ffhq_dataset.landmarks_detector import LandmarksDetector
+import shutil
 
 LANDMARKS_MODEL_URL = 'http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2'
 
@@ -24,8 +25,19 @@ if __name__ == "__main__":
 
     landmarks_model_path = unpack_bz2(get_file('shape_predictor_68_face_landmarks.dat.bz2',
                                                LANDMARKS_MODEL_URL, cache_subdir='temp'))
-    RAW_IMAGES_DIR = sys.argv[1]
-    ALIGNED_IMAGES_DIR = sys.argv[2]
+
+    if len(sys.argv)>0:
+        RAW_IMAGES_DIR = sys.argv[1]
+    else:
+        RAW_IMAGES_DIR = '../upload'
+    if len(sys.argv) > 1:
+        ALIGNED_IMAGES_DIR = sys.argv[2]
+    else:
+        ALIGNED_IMAGES_DIR = 'face'
+
+
+    shutil.rmtree('face', ignore_errors=True)
+    os.makedirs('face', exist_ok=True)
 
     landmarks_detector = LandmarksDetector(landmarks_model_path)
     for img_name in os.listdir(RAW_IMAGES_DIR):
