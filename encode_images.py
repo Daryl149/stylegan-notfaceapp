@@ -1,7 +1,7 @@
 import os
 import argparse
 import pickle
-from tqdm import tqdm
+from tqdm.auto import tqdm
 import PIL.Image
 import numpy as np
 import dnnlib
