@@ -47,7 +47,7 @@ if __name__ == "__main__":
 
     def move_and_show(latent_vector, direction, coeffs, out_name):
         vid_name = os.path.join(OUTPUT_DIR, out_name.replace('.npy', '.mp4'))
-        fourcc = cv2.VideoWriter_fourcc(*'x264')
+        fourcc = cv2.VideoWriter_fourcc(*'avc1')
         video = cv2.VideoWriter(vid_name, fourcc, 30, (1024, 1024))
         gen = {}
         for i, coeff in enumerate(coeffs):
