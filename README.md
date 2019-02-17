@@ -1,8 +1,8 @@
 I just put this awesome code into a colab 
 
-<eyalgruss.com/smile> - upload photos and get smiling videos
+https://eyalgruss.com/smile - upload photos and get smiling videos
 
-<eyalgruss.com/smiley> - take snapshot and get a smiling video
+https://eyalgruss.com/smiley - take snapshot and get a smiling video
 
 ## StyleGAN &mdash; Encoder for Official TensorFlow Implementation
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
