@@ -1,3 +1,9 @@
+I just put this awesome code into a colab 
+
+https://eyalgruss.com/smile - upload photos and get smiling videos
+
+https://eyalgruss.com/smiley - take snapshot and get a smiling video
+
 ## StyleGAN &mdash; Encoder for Official TensorFlow Implementation
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
 ![TensorFlow 1.10](https://img.shields.io/badge/tensorflow-1.10-green.svg?style=plastic)
