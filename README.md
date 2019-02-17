@@ -1,5 +1,7 @@
 I just put this awesome code into a colab 
+
 eyalgruss.com/smile - upload photos and get smiling videos
+
 eyalgruss.com/smiley - take snapshot and get a smiling video
 
 ## StyleGAN &mdash; Encoder for Official TensorFlow Implementation
