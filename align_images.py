@@ -39,7 +39,6 @@ if __name__ == "__main__":
     shutil.rmtree('face', ignore_errors=True)
     os.makedirs('face', exist_ok=True)
 
-    found = False
     landmarks_detector = LandmarksDetector(landmarks_model_path)
     for img_name in os.listdir(RAW_IMAGES_DIR):
         raw_img_path = os.path.join(RAW_IMAGES_DIR, img_name)
@@ -48,7 +47,3 @@ if __name__ == "__main__":
             aligned_face_path = os.path.join(ALIGNED_IMAGES_DIR, face_img_name)
 
             image_align(raw_img_path, aligned_face_path, face_landmarks)
-            found = True
-    if not found:
-        print('could not find any faces')
-    sys.exit(found)
