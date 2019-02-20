@@ -51,4 +51,4 @@ if __name__ == "__main__":
             found = True
     if not found:
         print('could not find any faces')
-    return found
+    sys.exit(found)
