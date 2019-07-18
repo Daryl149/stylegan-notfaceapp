@@ -59,7 +59,7 @@ if __name__ == "__main__":
         video.release()
         print('finished '+vid_name)
 
-    smile_direction = np.load('ffhq_dataset/latent_directions/smile.npy')
+    smile_direction = np.load('ffhq_dataset/latent_directions/age.npy')
     coeffs = np.concatenate([np.arange(0, 2, .02), np.arange(2, -2, -.02), np.arange(-2, 0, .02)])
     for file in os.listdir(ENC_DIR):
         img = np.load(os.path.join(ENC_DIR, file))
