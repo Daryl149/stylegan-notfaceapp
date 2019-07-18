@@ -60,7 +60,7 @@ if __name__ == "__main__":
         print('finished '+vid_name)
 
     smile_direction = np.load('ffhq_dataset/latent_directions/age.npy')
-    coeffs = np.concatenate([np.arange(0, 2, .02), np.arange(2, -2, -.02), np.arange(-3, 0, .02)])
+    coeffs = np.concatenate([np.arange(0, 1.5, .02), np.arange(1.5, -2.5, -.02), np.arange(-2.5, 0, .02)])
     for file in os.listdir(ENC_DIR):
         img = np.load(os.path.join(ENC_DIR, file))
         move_and_show(img, smile_direction, coeffs, file)
