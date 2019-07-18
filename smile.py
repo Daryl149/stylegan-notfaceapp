@@ -24,7 +24,7 @@ if __name__ == "__main__":
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
-    URL_FFHQ = 'https://drive.google.com/uc?id=1MEGjdvVpUsu1jB4zrXZN7Y4kBBOzizDQ'
+    URL_FFHQ = 'https://drive.google.com/uc?id=1FMUv270Mx_5kMjLyLDhucOcmfUIw0uTK'
     URL_FFHQ_mirror = 'https://drive.google.com/uc?id=19B138TWKeOs-JIol0_K-CCCDMYXbK5bk'
 
     tflib.init_tf()
