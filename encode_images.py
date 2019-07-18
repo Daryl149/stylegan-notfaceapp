@@ -11,7 +11,7 @@ from encoder.generator_model import Generator
 from encoder.perceptual_model import PerceptualModel
 import shutil
 
-URL_FFHQ = 'https://drive.google.com/uc?id=1MEGjdvVpUsu1jB4zrXZN7Y4kBBOzizDQ'  # karras2019stylegan-ffhq-1024x1024.pkl
+URL_FFHQ = 'https://drive.google.com/uc?id=1FMUv270Mx_5kMjLyLDhucOcmfUIw0uTK'  # karras2019stylegan-ffhq-1024x1024.pkl
 URL_FFHQ_mirror = 'https://drive.google.com/uc?id=19B138TWKeOs-JIol0_K-CCCDMYXbK5bk'
 
 
