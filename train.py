@@ -31,7 +31,7 @@ if 1:
     grid          = EasyDict(size='4k', layout='random')                                   # Options for setup_snapshot_image_grid().
     metrics       = [metric_base.fid50k]                                                   # Options for MetricGroup.
     submit_config = dnnlib.SubmitConfig()                                                  # Options for dnnlib.submit_run().
-    tf_config     = {'rnd.np_random_seed': 500}                                           # Options for tflib.init_tf().
+    tf_config     = {'rnd.np_random_seed': 1000}                                           # Options for tflib.init_tf().
 
     # Dataset.
     desc += '-ffhq';     dataset = EasyDict(tfrecord_dir='ffhq');              train.mirror_augment = True
@@ -93,7 +93,7 @@ if 0:
     grid          = EasyDict(size='1080p', layout='random')                        # Options for setup_snapshot_image_grid().
     metrics       = [metric_base.fid50k]                                           # Options for MetricGroup.
     submit_config = dnnlib.SubmitConfig()                                          # Options for dnnlib.submit_run().
-    tf_config     = {'rnd.np_random_seed': 500}                                   # Options for tflib.init_tf().
+    tf_config     = {'rnd.np_random_seed': 1000}                                   # Options for tflib.init_tf().
 
     # Dataset (choose one).
     desc += '-celebahq';            dataset = EasyDict(tfrecord_dir='celebahq'); train.mirror_augment = True
