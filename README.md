@@ -1,4 +1,4 @@
-I just put this awesome code into a colab 
+https://github.com/eyaler/ put this awesome code from https://github.com/Puzer into a colab, I modified it to handle more types of transformations.
 
 https://eyalgruss.com/smile - upload photos and get smiling videos
 
